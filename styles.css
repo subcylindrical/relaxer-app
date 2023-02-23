@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Sacramento&family=Tangerine&display=swap');
+
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  font-family: 'Allura', cursive;
+
+  box-sizing: border-box;
+}
+
+/* Background Image */
+.relaxer-wrapper {
+  background-image: url(https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  /* background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp4518438.jpg&f=1&nofb=1&ipt=8ba6f658878e30c253e117b62587f1a70df5cb9af10f048461ce3b31f433cdb6&ipo=images); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Header */
+h1 {
+  /* color: white; */
+  font-size: 4.5rem;
+  margin-top: 3rem;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 2px;
+  /* text-transform: lowercase; */
+}
+
+/* Relaxer wrapper */
+.inner-relaxer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* Relaxer */
+.relaxer {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 30rem;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 15px solid salmon;
+  position: relative;
+}
+
+.relaxer::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: rgb(127, 197, 255);
+  position: absolute;
+  transform: rotate(45deg) translate(170px);
+}
+
+.action {
+  font-size: 4rem;
+  color: white;
+  font-family: 'Tangerine', cursive;
+  transition: transform 2s;
+}
+
+.breath-in {
+  transform: scale(1.5);
+}
